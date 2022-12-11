@@ -1,1 +1,1 @@
-docker build -t hello-world .
+docker build -t web-to-png .

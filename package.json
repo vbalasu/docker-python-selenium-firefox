@@ -1,0 +1,15 @@
+{
+  "name": "web-to-png",
+  "version": "1.0.0",
+  "description": "This example contains the minimal setup needed to build and run a Lambda docker container with the Python runtime.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "puppeteer": "^19.4.0"
+  }
+}
