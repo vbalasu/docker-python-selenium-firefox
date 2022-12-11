@@ -1,1 +1,3 @@
-curl -XPOST "http://localhost:9000/2015-03-31/functions/function/invocations" -d '{}'
+curl -H \
+"Authorization: Bearer $(gcloud auth print-identity-token)" \
+https://web-to-png-az5g2ljdnq-uc.a.run.app
