@@ -1,16 +1,13 @@
-# lambda-container
+# docker-python-selenium-firefox
 
-This example contains the minimal setup needed to build and run a Lambda docker container with the Python runtime. 
+This is a starter project that is designed to be deployed to Google Cloud Run
 
-It consists of:
-- Dockerfile
-- app.py
-- requirements.txt
-- build.sh
-- run.sh
-- test.sh
+It consists of a docker container that is based on a Python image. The Dockerfile installs the following software:
 
-This is based on the instructions found at:
-[Deploy Python Lambda functions with container images](https://docs.aws.amazon.com/lambda/latest/dg/python-image.html)
+1. firefox-esr
+2. geckodriver
+3. selenium
 
-Use this as a starting point for your Lambda Python projects.
+It also includes `build.sh` that builds the Docker container, and `deploy.sh` that deploys it to Google Cloud Run
+
+The resulting function can be invoked by running `test.sh`
